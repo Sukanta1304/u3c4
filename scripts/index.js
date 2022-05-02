@@ -83,8 +83,8 @@ let search=(e)=>{
         fetch(link).then(function(res){
             return res.json()
         }).then(function(res){
-            let data= res.articles
-            console.log(data)
+            let data= res.articles;
+            localStorage.setItem("News",JSON.stringify(data))
         }).catch(function(err){
             console.log(err)
         });
