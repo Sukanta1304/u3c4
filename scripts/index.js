@@ -84,7 +84,7 @@ let search=(e)=>{
             return res.json()
         }).then(function(res){
             let data= res.articles
-            localStorage.setItem("news",JSON.stringify(data))
+            console.log(data)
         }).catch(function(err){
             console.log(err)
         });
